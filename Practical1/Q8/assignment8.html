@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Your order</h1>
+    <form>
+        <label>
+            Name : 
+            <input type="text" name="customerName" required>
+        </label><br><br>
+
+        Email : <input type="email" name="email" required>
+        <br><br>
+
+        <fieldset>
+            <legend>Select a product</legend>
+            <input type="radio" id="ultrabook1" name="product" value="MacBook Pro 13.3">
+            <label for="ultrabook1">MacBook Pro 13.3" i5 2.3GHz 8GB RAM 128GB SSD 1.37kg</label><br>
+            <input type="radio" id="ultrabook2" name="product" value="MacBook Pro 15.4">
+            <label for="ultrabook2">MacBook Pro 15.4" i7 2.7GHz 16GB RAM 512GB SSD 1.83kg</label><br>  
+            <input type="radio" id="ultrabook3" name="productB" value="MacBook Air 13.3">
+            <label for="ultrabook3">MacBook Air 13.3" i5 1.8GHz 8GB RAM 128GB Flash 1.34kg</label><br>  
+            <input type="radio" id="ultrabook4" name="productB" value="MacBook Pro 12">
+            <label for="ultrabook4">MacBook Pro 12" Core m3 1.2GHz 8GB RAM 256GB SSD 0.92kg</label><br>  
+        </fieldset><br>
+
+        <label>Date of Delivery : <input type="date" name="deliveryDate" required></label>
+        <br><br>
+
+        <label for="payment">Payment method: </label>
+        <select id="payment" name="pay" required>
+            <option value="cc">Credit card</option>
+            <option value="Paynow">Paynow</option>
+            <option value="TT">Bank Transfer</option>
+        </select><br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label><br>
+
+        <input type="checkbox" id="marketing" name="marketing">
+        <label for="marketing">I agree to receive promotional emails</label><br><br>
+
+        <input type="submit" value="Click to Proceed">
+        <input type="reset" disabled>
+    </form>
+</body>
+</html>
